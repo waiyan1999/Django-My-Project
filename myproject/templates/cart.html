@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block title %} Cart {% endblock title %}
+
+{% block content %}
+
+    <h1> This is Cart Page</h1>
+
+    {% for i in c_data %}
+
+    <h1> {{i.cart_name}} </h1>
+
+    <hr>
+    
+    {% endfor %}
+
+{% endblock content %}
